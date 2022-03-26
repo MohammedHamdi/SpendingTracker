@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F2FE83826E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE83726E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTAApp.swift */; };
+		6F2FE83A26E9EB330063D8F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE83926E9EB330063D8F9 /* ContentView.swift */; };
+		6F2FE83C26E9EB390063D8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2FE83B26E9EB390063D8F9 /* Assets.xcassets */; };
+		6F2FE83F26E9EB390063D8F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2FE83E26E9EB390063D8F9 /* Preview Assets.xcassets */; };
+		6F2FE84126E9EB390063D8F9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84026E9EB390063D8F9 /* Persistence.swift */; };
+		6F2FE84426E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84226E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld */; };
+		6F2FE84D26E9F18F0063D8F9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84C26E9F18F0063D8F9 /* MainView.swift */; };
+		6F2FE84F26E9FD550063D8F9 /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84E26E9FD550063D8F9 /* AddCardForm.swift */; };
+		6F39544C26F22AC100FBAB77 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544B26F22AC100FBAB77 /* Colors.swift */; };
+		6F39544E26F73DB000FBAB77 /* DeviceIdiomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544D26F73DB000FBAB77 /* DeviceIdiomView.swift */; };
+		6F39545026F7491D00FBAB77 /* MainPadDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544F26F7491D00FBAB77 /* MainPadDeviceView.swift */; };
+		6F64141426F07F3D00E0CB80 /* AddTranscationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141326F07F3D00E0CB80 /* AddTranscationForm.swift */; };
+		6F64141A26F0A81B00E0CB80 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141926F0A81B00E0CB80 /* TransactionsListView.swift */; };
+		6F64141C26F1E52A00E0CB80 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141B26F1E52900E0CB80 /* CategoriesListView.swift */; };
+		6F7B0A4426FA0B4D00FE8FBC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7B0A4326FA0B4D00FE8FBC /* WidgetKit.framework */; };
+		6F7B0A4626FA0B4D00FE8FBC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7B0A4526FA0B4D00FE8FBC /* SwiftUI.framework */; };
+		6F7B0A4926FA0B4D00FE8FBC /* CardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B0A4826FA0B4D00FE8FBC /* CardWidget.swift */; };
+		6F7B0A4B26FA0B5000FE8FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7B0A4A26FA0B5000FE8FBC /* Assets.xcassets */; };
+		6F7B0A4F26FA0B5000FE8FBC /* CardWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F7B0A4126FA0B4D00FE8FBC /* CardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F7B0A5426FA0E1200FE8FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2FE83B26E9EB390063D8F9 /* Assets.xcassets */; };
+		6F7B0A5526FA10CE00FE8FBC /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84226E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld */; };
+		6F7B0A5626FA110900FE8FBC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84026E9EB390063D8F9 /* Persistence.swift */; };
+		6F7B0A5726FA15E700FE8FBC /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84E26E9FD550063D8F9 /* AddCardForm.swift */; };
+		6FB52BAA26FA19BA000F87A3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544B26F22AC100FBAB77 /* Colors.swift */; };
+		6FB52BAB26FA19BA000F87A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE84C26E9F18F0063D8F9 /* MainView.swift */; };
+		6FB52BAC26FA19BF000F87A3 /* AddTranscationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141326F07F3D00E0CB80 /* AddTranscationForm.swift */; };
+		6FB52BAD26FA19C1000F87A3 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141B26F1E52900E0CB80 /* CategoriesListView.swift */; };
+		6FB52BAE26FA19C4000F87A3 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F64141926F0A81B00E0CB80 /* TransactionsListView.swift */; };
+		6FB52BB126FA1DF2000F87A3 /* MainPadDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544F26F7491D00FBAB77 /* MainPadDeviceView.swift */; };
+		6FB52BB226FA1DF5000F87A3 /* DeviceIdiomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F39544D26F73DB000FBAB77 /* DeviceIdiomView.swift */; };
+		6FB52BB526FA22AF000F87A3 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB326FA2232000F87A3 /* MediumWidgetView.swift */; };
+		6FB52BB826FA2620000F87A3 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB626FA261B000F87A3 /* LargeWidgetView.swift */; };
+		6FB52BBB26FB09E0000F87A3 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB926FB09A8000F87A3 /* SmallWidgetView.swift */; };
+		6FB52BBC26FB0A2E000F87A3 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB926FB09A8000F87A3 /* SmallWidgetView.swift */; };
+		6FB52BBD26FB0A3F000F87A3 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB626FA261B000F87A3 /* LargeWidgetView.swift */; };
+		6FB52BBE26FB0A3F000F87A3 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BB326FA2232000F87A3 /* MediumWidgetView.swift */; };
+		6FB52BC026FB0C1D000F87A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BBF26FB0C1D000F87A3 /* CoreDataStack.swift */; };
+		6FB52BC226FB1704000F87A3 /* CustomPersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BC126FB1704000F87A3 /* CustomPersistenceContainer.swift */; };
+		6FB52BC326FB1809000F87A3 /* CustomPersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52BC126FB1704000F87A3 /* CustomPersistenceContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F7B0A4D26FA0B5000FE8FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2FE82C26E9EB330063D8F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F7B0A4026FA0B4D00FE8FBC;
+			remoteInfo = CardWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F7B0A5026FA0B5000FE8FBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F7B0A4F26FA0B5000FE8FBC /* CardWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F2FE83426E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendingTrackerSwiftUICoreDataLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2FE83726E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrackerSwiftUICoreDataLBTAApp.swift; sourceTree = "<group>"; };
+		6F2FE83926E9EB330063D8F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F2FE83B26E9EB390063D8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F2FE83E26E9EB390063D8F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F2FE84026E9EB390063D8F9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6F2FE84326E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendingTrackerSwiftUICoreDataLBTA.xcdatamodel; sourceTree = "<group>"; };
+		6F2FE84526E9EB390063D8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2FE84C26E9F18F0063D8F9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6F2FE84E26E9FD550063D8F9 /* AddCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardForm.swift; sourceTree = "<group>"; };
+		6F39544B26F22AC100FBAB77 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6F39544D26F73DB000FBAB77 /* DeviceIdiomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdiomView.swift; sourceTree = "<group>"; };
+		6F39544F26F7491D00FBAB77 /* MainPadDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPadDeviceView.swift; sourceTree = "<group>"; };
+		6F64141326F07F3D00E0CB80 /* AddTranscationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTranscationForm.swift; sourceTree = "<group>"; };
+		6F64141926F0A81B00E0CB80 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		6F64141B26F1E52900E0CB80 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		6F7B0A4126FA0B4D00FE8FBC /* CardWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7B0A4326FA0B4D00FE8FBC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6F7B0A4526FA0B4D00FE8FBC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6F7B0A4826FA0B4D00FE8FBC /* CardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWidget.swift; sourceTree = "<group>"; };
+		6F7B0A4A26FA0B5000FE8FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F7B0A4C26FA0B5000FE8FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB52BAF26FA1C40000F87A3 /* SpendingTrackerSwiftUICoreDataLBTA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpendingTrackerSwiftUICoreDataLBTA.entitlements; sourceTree = "<group>"; };
+		6FB52BB026FA1C84000F87A3 /* CardWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6FB52BB326FA2232000F87A3 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		6FB52BB626FA261B000F87A3 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
+		6FB52BB926FB09A8000F87A3 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		6FB52BBF26FB0C1D000F87A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6FB52BC126FB1704000F87A3 /* CustomPersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPersistenceContainer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F2FE83126E9EB330063D8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7B0A3E26FA0B4D00FE8FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7B0A4626FA0B4D00FE8FBC /* SwiftUI.framework in Frameworks */,
+				6F7B0A4426FA0B4D00FE8FBC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F2FE82B26E9EB330063D8F9 = {
+			isa = PBXGroup;
+			children = (
+				6FB52BB026FA1C84000F87A3 /* CardWidgetExtension.entitlements */,
+				6F2FE83626E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA */,
+				6F7B0A4726FA0B4D00FE8FBC /* CardWidget */,
+				6F7B0A4226FA0B4D00FE8FBC /* Frameworks */,
+				6F2FE83526E9EB330063D8F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F2FE83526E9EB330063D8F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F2FE83426E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.app */,
+				6F7B0A4126FA0B4D00FE8FBC /* CardWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F2FE83626E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA */ = {
+			isa = PBXGroup;
+			children = (
+				6FFF2315271F0AE9008A8FBD /* Al-DAWAA */,
+				6FB52BAF26FA1C40000F87A3 /* SpendingTrackerSwiftUICoreDataLBTA.entitlements */,
+				6F39544A26F22AB400FBAB77 /* Utilities */,
+				6F2FE84B26E9F1770063D8F9 /* Main */,
+				6F2FE83726E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTAApp.swift */,
+				6F2FE83926E9EB330063D8F9 /* ContentView.swift */,
+				6F2FE83B26E9EB390063D8F9 /* Assets.xcassets */,
+				6F2FE84026E9EB390063D8F9 /* Persistence.swift */,
+				6FB52BC126FB1704000F87A3 /* CustomPersistenceContainer.swift */,
+				6FB52BBF26FB0C1D000F87A3 /* CoreDataStack.swift */,
+				6F2FE84526E9EB390063D8F9 /* Info.plist */,
+				6F2FE84226E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld */,
+				6F2FE83D26E9EB390063D8F9 /* Preview Content */,
+				6F39544D26F73DB000FBAB77 /* DeviceIdiomView.swift */,
+				6F39544F26F7491D00FBAB77 /* MainPadDeviceView.swift */,
+			);
+			path = SpendingTrackerSwiftUICoreDataLBTA;
+			sourceTree = "<group>";
+		};
+		6F2FE83D26E9EB390063D8F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F2FE83E26E9EB390063D8F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F2FE84B26E9F1770063D8F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6F2FE84C26E9F18F0063D8F9 /* MainView.swift */,
+				6F64141226F07F1E00E0CB80 /* Transaction */,
+				6F64140D26EE1F7400E0CB80 /* AddCard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F39544A26F22AB400FBAB77 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6F39544B26F22AC100FBAB77 /* Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6F64140D26EE1F7400E0CB80 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				6F2FE84E26E9FD550063D8F9 /* AddCardForm.swift */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		6F64141226F07F1E00E0CB80 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				6F64141326F07F3D00E0CB80 /* AddTranscationForm.swift */,
+				6F64141B26F1E52900E0CB80 /* CategoriesListView.swift */,
+				6F64141926F0A81B00E0CB80 /* TransactionsListView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		6F7B0A4226FA0B4D00FE8FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B0A4326FA0B4D00FE8FBC /* WidgetKit.framework */,
+				6F7B0A4526FA0B4D00FE8FBC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F7B0A4726FA0B4D00FE8FBC /* CardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B0A4826FA0B4D00FE8FBC /* CardWidget.swift */,
+				6FB52BB926FB09A8000F87A3 /* SmallWidgetView.swift */,
+				6FB52BB326FA2232000F87A3 /* MediumWidgetView.swift */,
+				6FB52BB626FA261B000F87A3 /* LargeWidgetView.swift */,
+				6F7B0A4A26FA0B5000FE8FBC /* Assets.xcassets */,
+				6F7B0A4C26FA0B5000FE8FBC /* Info.plist */,
+			);
+			path = CardWidget;
+			sourceTree = "<group>";
+		};
+		6FFF2315271F0AE9008A8FBD /* Al-DAWAA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Al-DAWAA";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F2FE83326E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2FE84826E9EB390063D8F9 /* Build configuration list for PBXNativeTarget "SpendingTrackerSwiftUICoreDataLBTA" */;
+			buildPhases = (
+				6F2FE83026E9EB330063D8F9 /* Sources */,
+				6F2FE83126E9EB330063D8F9 /* Frameworks */,
+				6F2FE83226E9EB330063D8F9 /* Resources */,
+				6F7B0A5026FA0B5000FE8FBC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7B0A4E26FA0B5000FE8FBC /* PBXTargetDependency */,
+			);
+			name = SpendingTrackerSwiftUICoreDataLBTA;
+			productName = SpendingTrackerSwiftUICoreDataLBTA;
+			productReference = 6F2FE83426E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F7B0A4026FA0B4D00FE8FBC /* CardWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7B0A5326FA0B5000FE8FBC /* Build configuration list for PBXNativeTarget "CardWidgetExtension" */;
+			buildPhases = (
+				6F7B0A3D26FA0B4D00FE8FBC /* Sources */,
+				6F7B0A3E26FA0B4D00FE8FBC /* Frameworks */,
+				6F7B0A3F26FA0B4D00FE8FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardWidgetExtension;
+			productName = CardWidgetExtension;
+			productReference = 6F7B0A4126FA0B4D00FE8FBC /* CardWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2FE82C26E9EB330063D8F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6F2FE83326E9EB330063D8F9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					6F7B0A4026FA0B4D00FE8FBC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 6F2FE82F26E9EB330063D8F9 /* Build configuration list for PBXProject "SpendingTrackerSwiftUICoreDataLBTA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F2FE82B26E9EB330063D8F9;
+			productRefGroup = 6F2FE83526E9EB330063D8F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F2FE83326E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA */,
+				6F7B0A4026FA0B4D00FE8FBC /* CardWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2FE83226E9EB330063D8F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2FE83F26E9EB390063D8F9 /* Preview Assets.xcassets in Resources */,
+				6F2FE83C26E9EB390063D8F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7B0A3F26FA0B4D00FE8FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7B0A5426FA0E1200FE8FBC /* Assets.xcassets in Resources */,
+				6F7B0A4B26FA0B5000FE8FBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2FE83026E9EB330063D8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB52BC226FB1704000F87A3 /* CustomPersistenceContainer.swift in Sources */,
+				6F2FE84426E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld in Sources */,
+				6FB52BBC26FB0A2E000F87A3 /* SmallWidgetView.swift in Sources */,
+				6F39544C26F22AC100FBAB77 /* Colors.swift in Sources */,
+				6F2FE84126E9EB390063D8F9 /* Persistence.swift in Sources */,
+				6F2FE84F26E9FD550063D8F9 /* AddCardForm.swift in Sources */,
+				6F2FE83A26E9EB330063D8F9 /* ContentView.swift in Sources */,
+				6F2FE84D26E9F18F0063D8F9 /* MainView.swift in Sources */,
+				6FB52BC026FB0C1D000F87A3 /* CoreDataStack.swift in Sources */,
+				6F64141C26F1E52A00E0CB80 /* CategoriesListView.swift in Sources */,
+				6F64141A26F0A81B00E0CB80 /* TransactionsListView.swift in Sources */,
+				6F39544E26F73DB000FBAB77 /* DeviceIdiomView.swift in Sources */,
+				6FB52BBD26FB0A3F000F87A3 /* LargeWidgetView.swift in Sources */,
+				6F64141426F07F3D00E0CB80 /* AddTranscationForm.swift in Sources */,
+				6FB52BBE26FB0A3F000F87A3 /* MediumWidgetView.swift in Sources */,
+				6F2FE83826E9EB330063D8F9 /* SpendingTrackerSwiftUICoreDataLBTAApp.swift in Sources */,
+				6F39545026F7491D00FBAB77 /* MainPadDeviceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7B0A3D26FA0B4D00FE8FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB52BAD26FA19C1000F87A3 /* CategoriesListView.swift in Sources */,
+				6FB52BB126FA1DF2000F87A3 /* MainPadDeviceView.swift in Sources */,
+				6FB52BC326FB1809000F87A3 /* CustomPersistenceContainer.swift in Sources */,
+				6FB52BAE26FA19C4000F87A3 /* TransactionsListView.swift in Sources */,
+				6FB52BB826FA2620000F87A3 /* LargeWidgetView.swift in Sources */,
+				6F7B0A5626FA110900FE8FBC /* Persistence.swift in Sources */,
+				6FB52BAB26FA19BA000F87A3 /* MainView.swift in Sources */,
+				6FB52BBB26FB09E0000F87A3 /* SmallWidgetView.swift in Sources */,
+				6FB52BAA26FA19BA000F87A3 /* Colors.swift in Sources */,
+				6F7B0A5526FA10CE00FE8FBC /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld in Sources */,
+				6F7B0A4926FA0B4D00FE8FBC /* CardWidget.swift in Sources */,
+				6FB52BB226FA1DF5000F87A3 /* DeviceIdiomView.swift in Sources */,
+				6FB52BB526FA22AF000F87A3 /* MediumWidgetView.swift in Sources */,
+				6FB52BAC26FA19BF000F87A3 /* AddTranscationForm.swift in Sources */,
+				6F7B0A5726FA15E700FE8FBC /* AddCardForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F7B0A4E26FA0B5000FE8FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F7B0A4026FA0B4D00FE8FBC /* CardWidgetExtension */;
+			targetProxy = 6F7B0A4D26FA0B5000FE8FBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F2FE84626E9EB390063D8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F2FE84726E9EB390063D8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F2FE84926E9EB390063D8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = SpendingTrackerSwiftUICoreDataLBTA/SpendingTrackerSwiftUICoreDataLBTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendingTrackerSwiftUICoreDataLBTA/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpendingTrackerSwiftUICoreDataLBTA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MHAH.SpendingTrackerSwiftUICoreDataLBTA.DBS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F2FE84A26E9EB390063D8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = SpendingTrackerSwiftUICoreDataLBTA/SpendingTrackerSwiftUICoreDataLBTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendingTrackerSwiftUICoreDataLBTA/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpendingTrackerSwiftUICoreDataLBTA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MHAH.SpendingTrackerSwiftUICoreDataLBTA.DBS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F7B0A5126FA0B5000FE8FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = CardWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MHAH.SpendingTrackerSwiftUICoreDataLBTA.DBS.CardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F7B0A5226FA0B5000FE8FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = CardWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MHAH.SpendingTrackerSwiftUICoreDataLBTA.DBS.CardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F2FE82F26E9EB330063D8F9 /* Build configuration list for PBXProject "SpendingTrackerSwiftUICoreDataLBTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2FE84626E9EB390063D8F9 /* Debug */,
+				6F2FE84726E9EB390063D8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2FE84826E9EB390063D8F9 /* Build configuration list for PBXNativeTarget "SpendingTrackerSwiftUICoreDataLBTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2FE84926E9EB390063D8F9 /* Debug */,
+				6F2FE84A26E9EB390063D8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7B0A5326FA0B5000FE8FBC /* Build configuration list for PBXNativeTarget "CardWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7B0A5126FA0B5000FE8FBC /* Debug */,
+				6F7B0A5226FA0B5000FE8FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F2FE84226E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F2FE84326E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodel */,
+			);
+			currentVersion = 6F2FE84326E9EB390063D8F9 /* SpendingTrackerSwiftUICoreDataLBTA.xcdatamodel */;
+			path = SpendingTrackerSwiftUICoreDataLBTA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6F2FE82C26E9EB330063D8F9 /* Project object */;
+}
